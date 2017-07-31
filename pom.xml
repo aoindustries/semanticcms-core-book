@@ -42,6 +42,13 @@ along with semanticcms-core-repository.  If not, see <http://www.gnu.org/license
 / <a target="_top" href="${project.url}">${shortTitle}</a>]]></javadoc.breadcrumbs>
 		<shortTitle>Repository</shortTitle>
 		<description.html><![CDATA[Redistributable sets of <a target="_top" href="https://semanticcms.com/">SemanticCMS</a> pages and associated resources.]]></description.html>
+		<javadoc.modules><![CDATA[<div style="float:left; margin: 0 1em">
+			<h2 style="margin-top: 0em">Modules</h2>
+			<ul>
+				<li><a target="_top" href="https://semanticcms.com/core/repository/local/">SemanticCMS Core Repository Local</a></li>
+				<li><a target="_top" href="https://semanticcms.com/core/repository/missing/">SemanticCMS Core Repository Missing</a></li>
+			</ul>
+		</div>]]></javadoc.modules>
 	</properties>
 
 	<name>SemanticCMS Core Repository</name>
