@@ -30,6 +30,10 @@ Redistributable sets of [SemanticCMS](https://semanticcms.com/) pages and associ
 * [Maven Central Repository](https://search.maven.org/#search%7Cgav%7C1%7Cg:%22com.semanticcms%22%20AND%20a:%22semanticcms-core-repository%22)
 * [GitHub](https://github.com/aoindustries/semanticcms-core-repository)
 
+## Modules
+* [SemanticCMS Core Repository Local](https://semanticcms.com/core/repository/local/)
+* [SemanticCMS Core Repository Missing](https://semanticcms.com/core/repository/missing/)
+
 ## Contact Us
 For questions or support, please [contact us](https://aoindustries.com/contact):
 
