@@ -86,22 +86,6 @@ abstract public class Book implements Comparable<Book> {
 	}
 
 	/**
-	 * @deprecated  Please use {@link #getBookRef()}.{@link BookRef#getName()}
-	 */
-	@Deprecated
-	public String getName() {
-		return bookRef.getName();
-	}
-
-	/**
-	 * @deprecated  Please use {@link #getBookRef()}.{@link BookRef#getPrefix()}
-	 */
-	@Deprecated
-	public String getPathPrefix() {
-		return getBookRef().getPrefix();
-	}
-
-	/**
 	 * An accessible book is able to invoke/capture its pages and is fully
 	 * connected into the page DAG.  Please note that accessible books may not
 	 * be local, but they are still part of the set of pages.
@@ -112,6 +96,7 @@ abstract public class Book implements Comparable<Book> {
 	 * A book may be able to provide a local file source for a given path.
 	 *
 	 * TODO: Does this belong here?
+	 * TODO: Separate call for "getResourceFile", along with ResourceRef distinct from PageRef?
 	 *
 	 * @return  The {@link File} or {@code null} if source not accessible.
 	 */
