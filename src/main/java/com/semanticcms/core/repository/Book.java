@@ -98,7 +98,8 @@ abstract public class Book implements Comparable<Book> {
 	/**
 	 * Gets the {@link ResourceStore} for this book.
 	 *
-	 * @return  The {@link ResourceStore} or {@code null} for an inaccessible book
+	 * @return  The {@link ResourceStore} or {@code null} for an inaccessible book or
+	 *          unavailable store
 	 */
 	abstract public ResourceStore getResourceStore();
 
