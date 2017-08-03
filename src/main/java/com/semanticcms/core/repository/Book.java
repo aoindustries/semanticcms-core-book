@@ -26,17 +26,20 @@ import com.aoindustries.lang.NullArgumentException;
 import com.semanticcms.core.model.Author;
 import com.semanticcms.core.model.BookRef;
 import com.semanticcms.core.model.Copyright;
+import com.semanticcms.core.model.Page;
 import com.semanticcms.core.model.PageRef;
 import com.semanticcms.core.model.ParentRef;
-import java.io.File;
-import java.net.URL;
+import com.semanticcms.core.model.Resource;
+import com.semanticcms.core.model.ResourceRef;
+import com.semanticcms.core.model.ResourceStore;
+import java.io.IOException;
 import java.util.Map;
 import java.util.Set;
 
 /**
- * A book contains pages and is the central mechanism for high-level
- * separation of content.  Each book usually has its own code repository
- * and a book can be added to multiple webapps.
+ * A book contains {@link Page pages} and {@link Resource resources} and is the
+ * central mechanism for high-level separation of content.  Each book usually
+ * has its own code repository and a book can be added to multiple webapps.
  *
  * TODO: Interface + abstract base?
  */
@@ -93,23 +96,19 @@ abstract public class Book implements Comparable<Book> {
 	abstract public boolean isAccessible();
 
 	/**
-	 * A book may be able to provide a local file source for a given path.
+	 * Gets the {@link ResourceStore} for this book.
 	 *
-	 * TODO: Does this belong here?
-	 * TODO: Separate call for "getResourceFile", along with ResourceRef distinct from PageRef?
-	 *
-	 * @return  The {@link File} or {@code null} if source not accessible.
+	 * @return  The {@link ResourceStore} or {@code null} for an inaccessible book
 	 */
-	abstract public File getSourceFile(String path, boolean requireBook, boolean requireFile);
+	abstract public ResourceStore getResourceStore();
 
 	/**
-	 * A book may be able to provide a URL source for a given path.
+	 * Gets the {@link ResourceRef} for the source of the given {@link Page}.
+	 * Although not typical, the resulting reference might be to a different domain/book.
 	 *
-	 * TODO: Does this belong here?
-	 *
-	 * @return  The {@link URL} or {@code null} if source not accessible.
+	 * @return  The {@link ResourceRef} or {@code null} for unknown or an inaccessible book
 	 */
-	abstract public URL getSourceURL(String path);
+	abstract public ResourceRef getPageSource(PageRef pageRef) throws IOException;
 
 	/**
 	 * Gets the parent pages for this book in the context of the current overall
