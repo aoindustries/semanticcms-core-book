@@ -46,6 +46,7 @@ abstract public class Book implements Comparable<Book> {
 
 	protected final BookRef bookRef;
 
+	// TODO: Move out of Book to specific subclasses that use it
 	private final String canonicalBase;
 
 	public Book(BookRef bookRef, String canonicalBase) {
