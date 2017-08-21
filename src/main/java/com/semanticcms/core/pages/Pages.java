@@ -28,6 +28,10 @@ import java.io.IOException;
 
 /**
  * Gets {@link Page pages} given their paths.
+ * <p>
+ * When needing to refer to a set of pages with a singular noun, use "repository",
+ * which is contrasted with "store" used for <code>Resources</code>.
+ * </p>
  *
  * @see  Page
  */
