@@ -31,7 +31,10 @@ Redistributable sets of [SemanticCMS](https://semanticcms.com/) pages.
 * [GitHub](https://github.com/aoindustries/semanticcms-core-pages)
 
 ## Modules
+* [SemanticCMS Core Pages JSP](https://semanticcms.com/core/pages/jsp/)
+* [SemanticCMS Core Pages JSPX](https://semanticcms.com/core/pages/jspx/)
 * [SemanticCMS Core Pages Servlet](https://semanticcms.com/core/pages/servlet/)
+* [SemanticCMS Core Pages Union](https://semanticcms.com/core/pages/union/)
 
 ## Contact Us
 For questions or support, please [contact us](https://aoindustries.com/contact):
