@@ -23,40 +23,23 @@
 package com.semanticcms.core.pages;
 
 import com.aoindustries.net.Path;
-import com.semanticcms.core.model.Page;
 import java.io.IOException;
 
 /**
- * Gets {@link Page pages} given their paths.
+ * Thrown when a page is not found.
  *
- * @see  Page
+ * @see  Pages#getPage(com.aoindustries.net.Path, com.semanticcms.core.pages.CaptureLevel)
  */
-public interface Pages {
+public class PageNotFoundException extends IOException {
 
-	/**
-	 * Repositories should provide a meaningful toString implementation, which makes
-	 * sense with the path following.
-	 */
-	@Override
-	String toString();
+	private static final long serialVersionUID = 1L;
 
-	/**
-	 * Checks if a page exists at the given path.
-	 *
-	 * @throws  IOException  if I/O error occurs
-	 */
-	boolean exists(Path path) throws IOException;
-
-	/**
-	 * Gets a {@link Page} for the given path.
-	 *
-	 * @param path   Must be a {@link Path valid path}
-	 * @param level  The minimum page capture level, note that a higher level might be substituted,
-	 *               such as a {@link CaptureLevel#META} capture in place of a {@link CaptureLevel#PAGE}
-	 *               request.
-	 *
-	 * @throws  IOException  if I/O error occurs
-	 * @throws  PageNotFoundException  if page does not exist (see {@link #exists(java.lang.String)})
-	 */
-	Page getPage(Path path, CaptureLevel level) throws IOException, PageNotFoundException;
+	public PageNotFoundException(Pages repository, Path path) {
+		super(
+			"Page not found: "
+			+ repository.toString()
+			+ (repository.toString().endsWith(":") ? "" : "!")
+			+ path
+		);
+	}
 }
