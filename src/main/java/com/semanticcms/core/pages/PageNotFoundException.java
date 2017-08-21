@@ -34,7 +34,7 @@ public class PageNotFoundException extends IOException {
 
 	private static final long serialVersionUID = 1L;
 
-	public PageNotFoundException(Pages repository, Path path) {
+	public PageNotFoundException(PageRepository repository, Path path) {
 		super(
 			"Page not found: "
 			+ repository.toString()

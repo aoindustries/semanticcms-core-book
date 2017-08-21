@@ -35,7 +35,7 @@ import java.io.IOException;
  *
  * @see  Page
  */
-public interface Pages {
+public interface PageRepository {
 
 	/**
 	 * Repositories should provide a meaningful toString implementation, which makes
