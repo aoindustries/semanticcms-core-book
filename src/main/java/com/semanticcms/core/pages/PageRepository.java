@@ -45,6 +45,13 @@ public interface PageRepository {
 	String toString();
 
 	/**
+	 * Checks if the repository is currently available.  A repository that is
+	 * unavailable is likely going to throw exceptions.  Tools are encouraged
+	 * to handle unavailable repositories gracefully, when possible.
+	 */
+	boolean isAvailable();
+
+	/**
 	 * Checks if a page exists at the given path.
 	 *
 	 * @throws  IOException  if I/O error occurs
