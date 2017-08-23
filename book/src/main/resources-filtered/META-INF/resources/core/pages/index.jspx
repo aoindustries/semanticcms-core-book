@@ -35,6 +35,7 @@ along with semanticcms-core-pages.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="@{documented.shortTitle}"
 		description="@{documented.description}"
 		datePublished="2017-08-20T22:47:10-0500"
+		dateModified="2017-08-23T15:22:37-0500"
 	>
 		<core:child page="changelog" />
 		<core:child page="apidocs/" />
@@ -63,6 +64,7 @@ along with semanticcms-core-pages.  If not, see <http://www.gnu.org/licenses />.
 			<ul>
 				<li><core:link book="/core/pages/jsp" page="/" /></li>
 				<li><core:link book="/core/pages/jspx" page="/" /></li>
+				<li><core:link book="/core/pages/local" page="/" /></li>
 				<li><core:link book="/core/pages/servlet" page="/" /></li>
 				<li><core:link book="/core/pages/union" page="/" /></li>
 			</ul>

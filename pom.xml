@@ -45,7 +45,11 @@ along with semanticcms-core-pages.  If not, see <http://www.gnu.org/licenses />.
 		<javadoc.modules><![CDATA[<div style="float:left; margin: 0 1em">
 			<h2 style="margin-top: 0em">Modules</h2>
 			<ul>
+				<li><a target="_top" href="https://semanticcms.com/core/pages/jsp/">SemanticCMS Core Pages JSP</a></li>
+				<li><a target="_top" href="https://semanticcms.com/core/pages/jspx/">SemanticCMS Core Pages JSPX</a></li>
+				<li><a target="_top" href="https://semanticcms.com/core/pages/local/">SemanticCMS Core Pages Local</a></li>
 				<li><a target="_top" href="https://semanticcms.com/core/pages/servlet/">SemanticCMS Core Pages Servlet</a></li>
+				<li><a target="_top" href="https://semanticcms.com/core/pages/union/">SemanticCMS Core Pages Union</a></li>
 			</ul>
 		</div>]]></javadoc.modules>
 	</properties>

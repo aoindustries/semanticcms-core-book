@@ -62,7 +62,7 @@ public interface PageRepository {
 	 * Gets a {@link Page} for the given path.
 	 *
 	 * @param path   Must be a {@link Path valid path}
-	 * @param level  The page capture level
+	 * @param level  The page capture level or {@code null} when not capturing (page will be used for direct display)
 	 *
 	 * @throws  IOException  if I/O error occurs
 	 * @throws  PageNotFoundException  if page does not exist (see {@link #exists(java.lang.String)})

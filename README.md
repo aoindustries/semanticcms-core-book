@@ -33,6 +33,7 @@ Redistributable sets of [SemanticCMS](https://semanticcms.com/) pages.
 ## Modules
 * [SemanticCMS Core Pages JSP](https://semanticcms.com/core/pages/jsp/)
 * [SemanticCMS Core Pages JSPX](https://semanticcms.com/core/pages/jspx/)
+* [SemanticCMS Core Pages Local](https://semanticcms.com/core/pages/local/)
 * [SemanticCMS Core Pages Servlet](https://semanticcms.com/core/pages/servlet/)
 * [SemanticCMS Core Pages Union](https://semanticcms.com/core/pages/union/)
 
