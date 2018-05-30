@@ -1,6 +1,6 @@
 /*
  * semanticcms-core-pages - Redistributable sets of SemanticCMS pages.
- * Copyright (C) 2017  AO Industries, Inc.
+ * Copyright (C) 2017, 2018  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -52,20 +52,14 @@ public interface PageRepository {
 	boolean isAvailable();
 
 	/**
-	 * Checks if a page exists at the given path.
-	 *
-	 * @throws  IOException  if I/O error occurs
-	 */
-	boolean exists(Path path) throws IOException;
-
-	/**
 	 * Gets a {@link Page} for the given path.
 	 *
 	 * @param path   Must be a {@link Path valid path}
 	 * @param level  The page capture level or {@code null} when not capturing (page will be used for direct display)
 	 *
+	 * @return  the page or {@code null} if does not exist
+	 *
 	 * @throws  IOException  if I/O error occurs
-	 * @throws  PageNotFoundException  if page does not exist (see {@link #exists(java.lang.String)})
 	 */
-	Page getPage(Path path, CaptureLevel level) throws IOException, PageNotFoundException;
+	Page getPage(Path path, CaptureLevel level) throws IOException;
 }
