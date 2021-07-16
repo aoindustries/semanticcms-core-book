@@ -48,7 +48,7 @@ along with semanticcms-core-pages.  If not, see <http://www.gnu.org/licenses />.
 				<li><a target="${javadoc.target}" href="https://semanticcms.com/core/pages/union/">SemanticCMS Core Pages Union</a></li>
 			</ul>
 		</div>]]></javadoc.modules>
-		<!-- SonarCloud.io -->
+		<!-- SonarQube -->
 		<sonar.projectKey>${project.groupId}:${project.artifactId}</sonar.projectKey>
 		<sonar.organization>aoindustries</sonar.organization>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
